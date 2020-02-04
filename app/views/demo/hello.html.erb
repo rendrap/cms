@@ -1,5 +1,5 @@
 <h1>Demo#hello</h1>
-<p>Find me in app/views/demo/index.html.erb</p>
+<p>Find me in app/views/demo/hello.html.erb</p>
 
 <% target = "world" %>
 <%= "Hello #{target}" %>
@@ -8,3 +8,10 @@
   <%= n %> <br>
 <% end %>
 
+<br>
+<%= link_to "go to index", :action => "index" %><br>
+
+ID: <%= @id %><br>
+ID: <%= params[:id] %><br>
+Page: <%= @page %><br><br>
+Next page : <%= @page.to_i + 1 %>
