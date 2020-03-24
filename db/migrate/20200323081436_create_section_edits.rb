@@ -6,7 +6,7 @@ class CreateSectionEdits < ActiveRecord::Migration[6.0]
       t.string "summary"
       t.timestamps
     end
-    add_index("section_edits",['admin_user_id', 'section_id'])
+    add_index("section_edits", ['admin_user_id', 'section_id'])
   end
 
   def down
