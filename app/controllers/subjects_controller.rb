@@ -1,5 +1,7 @@
 class SubjectsController < ApplicationController
+
   def index
+    @subject = Subject.sorted
   end
 
   def show
