@@ -35,7 +35,7 @@ class PagesController < ApplicationController
     if @page.update_attributes(page_params)
       # redirect to show action
       flash[:notice] = "Page updated successfully"
-      redirect_to(pages_path(@page))
+      redirect_to(page_path(@page))
     else
       render('edit')
     end

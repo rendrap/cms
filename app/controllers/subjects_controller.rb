@@ -36,7 +36,7 @@ class SubjectsController < ApplicationController
     if @subject.update_attributes(subject_params)
       # redirect to show action
       flash[:notice] = "Subject updated successfully"
-      redirect_to(subjects_path(@subject))
+      redirect_to(subject_path(@subject))
     else
       render('edit')
     end

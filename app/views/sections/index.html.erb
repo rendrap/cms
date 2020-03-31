@@ -12,7 +12,6 @@
     <tr class="header">
       <th>#</th>
       <th>Page ID</th>
-      <th>Permalink</th>
       <th>Section</th>
       <th>Visible</th>
       <th>Actions</th>
@@ -23,7 +22,6 @@
       <td><%= section.page_id %></td>
       <td><%= section.name %></td>
       <td class="text-center"><%= section.visible ? 'Yes' : 'No' %></td>
-      <td class="text-center"><%= section.sections.size %></td>
       <td class="actions">
         <%= link_to("Show", section_path(section), :class => 'action show') %>
         <%= link_to("Edit", edit_section_path(section), :class => 'action edit') %>
