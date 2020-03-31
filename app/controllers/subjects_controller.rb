@@ -21,7 +21,7 @@ class SubjectsController < ApplicationController
       flash[:notice] = "Subject created successfully"
       redirect_to(subjects_path)
     else
-      render('edit')
+      render('new')
     end
   end
 
@@ -38,7 +38,7 @@ class SubjectsController < ApplicationController
       flash[:notice] = "Subject updated successfully"
       redirect_to(subjects_path(@subject))
     else
-      render('new')
+      render('edit')
     end
   end
 
