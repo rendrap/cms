@@ -1,3 +1,4 @@
+<%= error_messages_for(f.object) %>
 <table summary="Subject form fields">
   <tr>
     <th>Name</th>
@@ -9,6 +10,6 @@
   </tr>
   <tr>
     <th>Visible</th>
-    <td><%= f.text_field(:visible) %></td>
+    <td><%= f.check_box(:visible) %></td>
   </tr>
 </table>

@@ -18,7 +18,7 @@
       <td><%= page.subject_id %></td>
       <td><%= page.name %></td>
       <td><%= page.permalink %></td>
-      <td class="text-center"><%= page.visible ? 'Yes' : 'No' %></td>
+      <td class="text-center"><%= status_tag(page.visible) %></td>
       <td class="text-center"><%= page.sections.size %></td>
       <td class="actions">
         <%= link_to("Show", page_path(page), :class => 'action show') %>
