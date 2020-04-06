@@ -4,6 +4,11 @@
 <a href="demo/hello">page 1</a><br>
 <%= link_to "page 1", :action => "hello" %><br>
 
-<%= link_to "Hello with param", :action => "hello", page: 5, :id => 20 %>
+<%= link_to "Hello with param", :action => "hello", page: 5, :id => 20 %><br>
 
-<%= link_to('Roar', '#', :onclick => "jsRoar('JavaScript'); return true;") %>
+<%= link_to "External link", "http://www.rubyonrails.org/", target: "_blank", rel: "nofollow" %><br>
+
+<%= link_to 'Roar', '#', :onclick => "roar('test');", id: "roar_id" %><br>
+
+
+<p>test</p>
