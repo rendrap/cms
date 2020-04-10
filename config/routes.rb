@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  root 'demo#index'
+
+  get 'admin', :to => 'access#menu'
+  get 'acess/menu'
+  get 'acess/login'
+  post 'access/attemp_login'
+  get 'access/logout'
+
+
   # get 'sections/index'
   # get 'sections/show'
   # get 'sections/new'
@@ -22,7 +31,7 @@ Rails.application.routes.draw do
   # default routes
   # get ':controller(/:action(/:id))'
 
-  root 'demo#index'
+
 
   resources :subjects do
     member do
