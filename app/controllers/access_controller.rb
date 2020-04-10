@@ -1,4 +1,7 @@
-class AcessController < ApplicationController
+class AccessController < ApplicationController
+
+  layout 'admin'
+
   def menu
   end
 

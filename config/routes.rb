@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root 'demo#index'
 
   get 'admin', :to => 'access#menu'
-  get 'acess/menu'
-  get 'acess/login'
+  get 'access/menu'
+  get 'access/login'
   post 'access/attemp_login'
   get 'access/logout'
 
