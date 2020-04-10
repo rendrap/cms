@@ -4,4 +4,12 @@ class AcessController < ApplicationController
 
   def login
   end
+
+  def attemp_login
+
+  end
+
+  def logout
+
+  end
 end
