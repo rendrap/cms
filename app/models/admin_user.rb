@@ -21,4 +21,12 @@ class AdminUser < ApplicationRecord
   validates_length_of :email, :maximum => 100
   validates_format_of :email, :with => EMAIL_REGEX
   validates_confirmation_of :email
+
+  scope :sorted, lambda { order('last_name ASC, first_name ASC')}
+
+  def name
+    "#{first_name} #{last_name}"
+    #or first_name + ' ' + last_name
+    # [first_name, last_name].join(' ')
+  end
 end
